@@ -1,0 +1,32 @@
+% ==============================================================================
+% cv_template.tex - Scheletro strutturale condiviso (indipendente dai contenuti)
+% ==============================================================================
+
+% Rileva automaticamente se esiste la cartella 'content' (locale) oppure 'content.example'
+\IfFileExists{content/\cvlang/info.tex}{%
+  \newcommand{\contentdir}{content}%
+}{%
+  \newcommand{\contentdir}{content.example}%
+}
+
+\begin{document}
+
+% --- Caricamento Dati Personali e Contatti ---
+\input{\contentdir/\cvlang/info}
+
+% --- Intestazione Grafica ---
+\input{cv_header}
+
+% --- Esperienza Lavorativa ---
+\input{\contentdir/\cvlang/experience}
+
+% --- Istruzione e Formazione ---
+\input{\contentdir/\cvlang/education}
+
+% --- Progetti ---
+\input{\contentdir/\cvlang/projects}
+
+% --- Competenze Tecniche e Linguistiche ---
+\input{\contentdir/\cvlang/skills}
+
+\end{document}

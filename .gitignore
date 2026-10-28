@@ -1,0 +1,27 @@
+# ==============================================================================
+# .gitignore - Esclusione file sensibili e temporanei di compilazione
+# ==============================================================================
+
+# Dati personali e sensibili locali (esclusi da GitHub)
+content/
+assets/profile.*
+
+# PDF compilati (esclusi per evitare di tracciare dati personali nel repo)
+*.pdf
+
+# Directory e file ausiliari di build LaTeX
+build/
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb

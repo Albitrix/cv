@@ -1,0 +1,25 @@
+% ==============================================================================
+% cv_header.tex - Struttura grafica e tipografica dell'intestazione
+% ==============================================================================
+
+\noindent
+\begin{minipage}[c]{0.51\linewidth}
+    \begin{tabular}{@{}c@{\hspace{8pt}}l@{}}
+        \profilephoto &
+        \begin{tabular}[c]{@{}l@{}}
+            {\LARGE \textbf{\cvName}} \\[3pt]
+            {\small \cvRole}
+        \end{tabular}
+    \end{tabular}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.48\linewidth}
+    \raggedleft\small
+    \begin{tabular}[c]{@{}l@{\hspace{7pt}}|@{\hspace{7pt}}r@{}}
+        \faMapMarker*\ \ifcsvoid{cvAddress}{\cvLocation}{\ifcsvoid{cvLocation}{\cvAddress}{\cvAddress, \cvLocation}} & \href{\cvLinkedInUrl}{\cvLinkedIn\ \faLinkedin} \\[2pt]
+        \href{mailto:\cvEmail}{\faEnvelope\ \cvEmail} & \href{\cvGitHubUrl}{\cvGitHub\ \faGithub} \\[2pt]
+        \ifcsvoid{cvPhone}{}{\faPhone*\ \cvPhone} & \href{\cvWebsiteUrl}{\cvWebsite\ \faGlobe}
+    \end{tabular}
+\end{minipage}
+
+\vspace{4pt}
