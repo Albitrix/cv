@@ -191,3 +191,7 @@ To compile this project locally, ensure you have:
   - macOS (Homebrew): `brew install --cask mactex-no-gui`
   - Arch Linux: `sudo pacman -S texlive-meta texlive-fontsextra`
 - **Build tools**: `make` and `latexmk`.
+
+---
+
+> **AI Note:** This project was built with the assistance of **Gemini 3.8 Flash**.
